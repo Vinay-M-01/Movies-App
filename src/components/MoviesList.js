@@ -10,12 +10,15 @@ const MovieList = (props) => {
         <Movie
           key={movie.id}
           title={movie.title}
-          releaseDate={movie.releaseDate}
+          releaseDate={movie.release}
           openingText={movie.openingText}
+          delMovie={props.delMovie}
         />
+        
       ))}
     </ul>
   );
+  
 };
 
 export default MovieList;
